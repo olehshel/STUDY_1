@@ -1,0 +1,124 @@
+.main {
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+.sales {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  background: rgb(249, 160, 160);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 160, 160, 1) 0%,
+    rgba(255, 106, 70, 1) 35%,
+    rgba(255, 64, 125, 1) 100%
+  );
+  border-radius: 10px;
+  height: 130px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.orders {
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 20px;
+  padding: 20px;
+  background: rgb(144, 233, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(144, 233, 255, 1) 0%,
+    rgba(117, 202, 255, 1) 35%,
+    rgba(44, 141, 252, 1) 100%
+  );
+  border-radius: 10px;
+  height: 130px;
+  width: 250px;
+  overflow: hidden;
+}
+.visitors {
+  display: inline-block;
+  margin-left: 20px;
+  padding: 20px;
+  background: rgb(145, 255, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(145, 255, 179, 1) 0%,
+    rgba(101, 221, 123, 1) 35%,
+    rgba(35, 215, 84, 1) 94%
+  );
+  border-radius: 10px;
+  height: 130px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 15px;
+  position: relative;
+  top: -5px;
+  left: 10px;
+}
+
+.rise {
+  font-size: 15px;
+  position: relative;
+  left: 10px;
+  top: 40px;
+}
+
+.number {
+  font-size: 27px;
+  position: relative;
+  left: 10px;
+  top: 9px;
+}
+
+.icon {
+  position: relative;
+  width: 20px;
+  left: 215px;
+  bottom: 65px;
+}
+
+.sales:hover::after,
+.sales:hover::before,
+.visitors:hover::after,
+.orders:hover::after,
+.orders:hover::before,
+.visitors:hover::before {
+  content: "";
+  position: relative;
+  opacity: 0.1;
+  transition: opacity 300ms ease-in;
+}
+
+.sales::after,
+.orders::after,
+.visitors::after {
+  position: relative;
+  content: "";
+  background-color: aliceblue;
+  opacity: 0.5;
+  left: 60px;
+  top: 35px;
+  padding: 75px;
+  border-radius: 50%;
+}
+
+.sales::before,
+.orders::before,
+.visitors::before {
+  position: relative;
+  content: "";
+  background-color: aliceblue;
+  opacity: 0.5;
+  left: 180px;
+  top: 35px;
+  padding: 65px;
+  border-radius: 50%;
+}

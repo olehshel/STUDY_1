@@ -1,49 +1,11 @@
-/* #div p {font-weight: bold;}
+li:first-child{color: red;}
 
-div ~ p {color: green;}
-div + p {text-decoration: underline solid red;} */
-
-/* .icon-conteiner{border: 5px solid black;
-width: 400px;
-padding: 20px;
-text-align: center;}
-
-.icon {display: inline-block;
-  background-color: dodgerblue;
-  border: 5px solid red;
-  font-size: 32px;
-  padding: 15px; 
-  margin: 0 20px;
-  margin-left: 20px;
+li:nth-child(3){
+  color: orange;
 }
-.icon + .icon {margin-left: 20px;} */
-
-:root{--bg-color:blue;
-  --font-size:24px;
-  --night-color: white;
-  --light-theme-color: black;
---horizontal-padding:15px;
---vertikal-padding:15px;}
-
-.link{
-  --bg-color:blue;
-  --font-size:24px;
-  --night-color: white;
-  --light-theme-color: black;
---horizontal-padding:15px;
---vertikal-padding:15px;
-
-  border: 2px solid black;
-  background-color: var(--bg-color);
-border-radius: 10px;
-padding: 15px 20px;
-color: white;
-font-size: 24px;
-margin-left: 100px;
+li:nth-child(2n){
+  color: darkcyan;
 }
-.link:hover{ background-color: dodgerblue;
-color: black;}
-
-p{ color: var(--bg-color);}
-
-.link:hover:not(a){background-color: limegreen;}
+li:nth-last-child(2n+1){
+  color: brown;
+}

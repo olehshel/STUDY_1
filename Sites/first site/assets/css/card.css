@@ -1,0 +1,95 @@
+.container{
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+}
+
+.card1{
+  display: inline-block;
+  background: rgb(249,160,160);
+  background: linear-gradient(90deg, rgba(249,160,160,1) 0%, rgba(255,106,70,1) 35%, rgba(255,64,125,1) 100%);
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.card2{
+  display: inline-block;
+  background: rgb(144, 233, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(144, 233, 255, 1) 0%,
+    rgba(117, 202, 255, 1) 35%,
+    rgba(44, 141, 252, 1) 100%
+  );
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+.card3{
+  display: inline-block;
+  background: rgb(145, 255, 179);
+  background: linear-gradient(
+    90deg,
+    rgba(145, 255, 179, 1) 0%,
+    rgba(101, 221, 123, 1) 35%,
+    rgba(35, 215, 84, 1) 94%
+  );
+  width: 200px;
+  height: 100px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+  overflow: hidden;
+}
+
+.icon{
+  width: 20px;
+  position: relative;
+  left: 170px;
+ bottom: 30px;
+}
+
+.card1::after{
+  position: relative;
+  content: "";
+  border-color: aliceblue;
+  padding: 30px;
+  border-radius: 50%;
+  left: 60px;
+  top: 35px;
+  opacity: 0.5;
+}
+
+.card1::before{
+  position: relative;
+  content: "";
+  border-color: aliceblue;
+  padding: 100px;
+  border-radius: 50%;
+  left: 40px;
+  top: 100px;
+  opacity: 0.5;
+  }
+
+.title{
+  font-size: 15px;
+  position: relative;
+  top: 10px;
+
+}
+
+  .namber{
+    font-size: 24px;
+    position: relative;
+    top: 15px;
+  }
+.rise{
+  position: relative;
+  top: 20px;
+}

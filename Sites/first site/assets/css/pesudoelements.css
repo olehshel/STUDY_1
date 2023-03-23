@@ -1,0 +1,176 @@
+article-head {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.text::first-letter {
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+}
+
+.text::first-line {
+  background-color: orange;
+}
+
+::selection {
+  background-color: lime;
+}
+/* 
+li {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  margin-top: 10px;
+  background-color: darkcyan;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+li::before,
+li::after  {
+  position: absolute;
+  display: inline-block;
+  color: black;
+}
+li::before {
+  content: open-quote;
+  right: 100%;
+  top: 0;
+}
+li::after {
+  content: close-quote;
+  left: 100%;
+  bottom: 0;
+} */
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid black;
+  z-index: 500;
+  background-color: darkcyan;
+}
+
+.nav {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-list {
+  font-size: 0;
+}
+
+.nav-list-item {
+  display: inline-block;
+  font-size: initial;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+  /* background-color: inherit; */
+  padding: 15px 20px;
+  min-width: 200px;
+  border: 2px solid;
+  height: 40px;
+  /* 
+    вказує, які властвості будут переходити (анімуватися)
+  */
+  transition-property: color, background-color;
+  /* 
+    час анімаціі
+  */
+  transition-duration: 300ms;
+  /* 
+    затримка перед переходом
+  */
+  transition-delay: 0.5s;
+  /* 
+    часова функція - як саме буде відбуватися анімація
+    ease | ease-in| ease-out| ease-in-out| linear 
+  */
+  transition-timing-function: linear;
+  /* transition: color 300ms 0.5s linear ,background-color 300ms 0.5s linear; */
+  transition: all 300ms linear;
+  position: relative;
+}
+
+.nav-link::before {
+  content: '';
+  width: 2px;
+  height: 0px;
+  background-color: red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  transition: height 0.3s ease-in;
+}
+
+/*
+  зробити ще один псевдоелемент для посилання 
+  і прописати для нього переход схожим чином
+*/
+
+.nav-link:hover::before {
+  height: 100%;
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: darkcyan;
+  /* width: 300px; */
+}
+
+.main {
+  min-height: 300vh;
+}
+
+.inner {
+  width: 200px;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  transition-property: width;
+  transition-duration: 3s;
+}
+
+.container:hover .inner {
+  width: 100%;
+}
+
+.linear {
+  transition-timing-function: linear;
+}
+
+.ease {
+  transition-timing-function: ease;
+}
+
+.ease-in {
+  transition-timing-function: ease-in;
+}
+
+.ease-out {
+  transition-timing-function: ease-out;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
