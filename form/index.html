@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form class="flex direction-column form">
+      <fieldset class="text-center title">
+        <legend><h1 class="register">Register</h1></legend>
+      </fieldset>
+
+      <div class="text-center create">
+        <p>Create your account. It's free and only takes a minute.</p>
+      </div>
+
+      <div class="flex space-between">
+        <input
+          type="text"
+          class="control name-input"
+          placeholder="First Name"
+          required
+          name="first-name"
+          pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ']{1,20}"
+          autocomplete="given-name"
+          autofocus
+        />
+        <input
+          type="text"
+          class="control name-input"
+          placeholder="Last Name"
+          required
+          name="last-name"
+          autocomplete="family-name"
+          pattern="[A-Za-zА-Яа-яІіЇїЄєҐґ']{1,20}"
+        />
+      </div>
+
+      <div class="flex direction-column">
+        <input
+          type="email"
+          class="control"
+          placeholder="Email"
+          required
+          name="email"
+          autocomplete="email"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        />
+        <input
+          type="password"
+          class="control"
+          placeholder="Password"
+          required
+          name="password"
+          autocomplete="new-password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Пароль має містити мінімум 8 символів, включаючи одну цифру, одну маленьку та велику літери."
+        />
+        <input
+          type="password"
+          class="control"
+          placeholder="Confirm Password"
+          required
+          name="confirm-password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          title="Пароль має містити мінімум 8 символів, включаючи одну цифру, одну маленьку та велику літери."
+        />
+      </div>
+
+      <div class="flex policy">
+        <label for="accept-policy" class="control accept-policy">
+          <input
+            id="accept-policy"
+            type="checkbox"
+            class="checkbox"
+            name="policy"
+            required
+            value="accept"
+          />
+          I accept the <a href="#" class="href">Terms of Use</a> &
+          <a href="#" class="href">Privacy Policy</a>.
+        </label>
+      </div>
+
+      <div class="flex direction-column">
+        <button type="submit" class="control submit">Register Now</button>
+      </div>
+    </form>
+  </body>
+</html>
